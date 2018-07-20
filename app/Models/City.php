@@ -18,4 +18,16 @@ class City extends Model
     protected $hidden = [
 
     ];
+
+    public function province(){
+        return $this->belongsTo('App\Models\Province','provCode','provCode');
+    }
+
+    public function region(){
+        return $this->belongsTo('App\Models\Region','regCode','regCode');
+    }
+
+    public function brgy(){
+        return $this->hasMany('App\Models\Brgy','citymunCode','citymunCode');
+    }
 }

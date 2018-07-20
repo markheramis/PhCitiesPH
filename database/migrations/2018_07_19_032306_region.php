@@ -15,9 +15,9 @@ class Region extends Migration
     {
         Schema::create('region', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('psgcCode',255);
+            $table->string('psgcCode',10);
             $table->text('regDesc');
-            $table->string('regCode',255);
+            $table->string('regCode',10);
         });
     }
 

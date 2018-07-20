@@ -31,20 +31,26 @@
 
                     <h3><u>Region</u></h3>
                     <ol>
-                       <li><a href="{{ url('/api/region') }}">{{ url('/api/book') }}</a></li>
-                       <li><a href="{{ url('/api/region/010000000')}}">{{ url('/url/region/010000000') }}</a></li>
+                       <li><a href="{{ url('/api/region') }}">{{ url('/api/region') }}</a></li>
+                       <li><a href="{{ url('/api/region/01')}}">{{ url('/url/region/01') }}</a></li>
+                       <li><a href="{{ url('/api/region/01/provinces')}}">{{ url('/url/region/01/provinces') }}</a></li>
+                       <li><a href="{{ url('/api/region/01/cities')}}">{{ url('/url/region/01/cities') }}</a></li>
+                       <li><a href="{{ url('/api/region/01/barangays')}}">{{ url('/url/region/01/barangays') }}</a></li>
                     </ol>
 
                     <h3><u>Province</u></h3>
                     <ol>
                        <li><a href="{{ url('/api/province')}}">{{ url('/api/province')}}</a></li>
-                       <li><a href="{{ url('/api/province/012800000')}}">{{ url('/api/province/012800000')}}</a></li>
+                       <li><a href="{{ url('/api/province/0155')}}">{{ url('/api/province/0155')}}</a></li>
+                       <li><a href="{{ url('/api/province/0155/cities')}}">{{ url('/api/province/0155/cities')}}</a></li>
+                       <li><a href="{{ url('/api/province/0155/barangays')}}">{{ url('/api/province/0155/barangays')}}</a></li>
                     </ol>
 
                     <h3><u>City</u></h3>
                     <ol>
                         <li><a href="{{ url('/api/city') }}">{{ url('/api/city')}}</a></li>
-                        <li><a href="{{ url('/api/city/012801000') }}">{{ url('/api/city/012801000')}}</a></li>
+                        <li><a href="{{ url('/api/city/012801') }}">{{ url('/api/city/012801')}}</a></li>
+                        <li><a href="{{ url('/api/city/012801/barangays') }}">{{ url('/api/city/012801/barangays')}}</a></li>
                     </ol>
 
                     <h3><u>Barangay</u></h3>

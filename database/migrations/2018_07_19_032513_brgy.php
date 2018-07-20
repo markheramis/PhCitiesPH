@@ -15,11 +15,11 @@ class Brgy extends Migration
     {
         Schema::create('brgy',function(Blueprint $table){
             $table->increments('id');
-            $table->string('brgyCode',255);
+            $table->string('brgyCode',10);
             $table->text('brgyDesc');
-            $table->string('regCode',255);
-            $table->string('provCode',255);
-            $table->string('citymunCode',255);
+            $table->string('regCode',10);
+            $table->string('provCode',10);
+            $table->string('citymunCode',10);
         });
     }
 

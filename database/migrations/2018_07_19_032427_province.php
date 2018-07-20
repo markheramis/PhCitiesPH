@@ -15,10 +15,11 @@ class Province extends Migration
     {
         Schema::create('province',function (Blueprint $table) {
             $table->increments('id');
-            $table->string('psgcCode',255);
+            $table->string('psgcCode',10);
             $table->text('provDesc');
-            $table->string('regCode',255);
-            $table->string('provCode',255);
+            $table->string('regCode',10);
+            $table->string('provCode',10);
+
         });
     }
 

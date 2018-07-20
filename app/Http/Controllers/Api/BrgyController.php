@@ -29,9 +29,9 @@ class BrgyController extends Controller
         }
     }
 
-    public function single($code)
+    public function single($brgyCode)
     {
-        $brgy = Brgy::where('brgyCode', $code)->first();
+        $brgy = Brgy::where('brgyCode', $brgyCode)->first();
 
         if(!$brgy){
             return $this->response->errorNotFound('Could not find the brgy');

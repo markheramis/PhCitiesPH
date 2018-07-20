@@ -17,4 +17,17 @@ class Brgy extends Model
     protected $hidden = [
 
     ];
+
+    public function city(){
+        return $this->belongsTo('App\Models\City','citymunCode','citymunCode');
+    }
+
+    public function province(){
+        return $this->belongsTo('App\Models\Province','provCode','provCode');
+    }
+
+    public function region(){
+        return $this->belongsTo('App\Models\Region','regCode','regCode');
+    }
+
 }

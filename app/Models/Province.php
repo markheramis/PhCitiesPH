@@ -17,4 +17,16 @@ class Province extends Model
     protected $hidden = [
 
     ];
+
+    public function region(){
+        return $this->belongsTo('App\Models\Region','regCode','regCode');
+    }
+
+    public function city(){
+        return $this->hasMany('App\Models\City','provCode','provCode');
+    }
+
+    public function brgy(){
+        return $this->hasMany('App\Models\Brgy','provCode','provCode');
+    }
 }
